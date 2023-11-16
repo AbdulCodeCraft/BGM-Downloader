@@ -6,7 +6,7 @@ const paniyamKgEl = document.getElementById('paniyamKg');
 const kalakalaKgEl = document.getElementById('kalakalaKg');
 const elluKgEl = document.getElementById('elluKg');
 const murukkuKgEl = document.getElementById('murukkuKg');
-
+const oattumaavuKgEl = document.getElementById("oattumaavuKg");
 const profitEl = document.getElementById("profit");
 
 
@@ -18,9 +18,10 @@ const paniyamKg = Number(paniyamKgEl.value);
 const kalakalaKg = Number(kalakalaKgEl.value);
 const elluKg = Number(elluKgEl.value);
 const murukkuKg = Number(murukkuKgEl.value);
+const oattumaavuKg = Number(oattumaavuKgEl.value);
 
 
-const profit = ((dhodhalKg + kalakalaKg + elluKg+ murukkuKg)*100) + (paniyamKg*95);
+const profit = ((dhodhalKg + kalakalaKg + elluKg+ murukkuKg + oattumaavuKg)*100) + (paniyamKg*95);
 
 
 profitEl.textContent ="Today's profit = " + profit;
